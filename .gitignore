@@ -1,0 +1,6 @@
+*.o
+a.out
+.vscode
+
+# implementation of ec is not included. instead, the object file is copied from another project
+!ec.o
