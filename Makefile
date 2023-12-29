@@ -1,10 +1,10 @@
-CC=gcc
-CFLAGS=-Wall -Wextra -pedantic -g -lpthread -lgmp
-SRCS=$(wildcard *.c)
-OBJS=$(SRCS:.c=.o)
+CXX=g++
+CXXFLAGS=-Wall -Wextra -pedantic -g -lpthread -lgmp
+SRCS=$(wildcard *.cpp)
+OBJS=$(SRCS:.cpp=.o)
 
 all: $(OBJS)
-	$(CC) $(OBJS) ec.o -o a.out $(CFLAGS)
+	$(CXX) $(OBJS) ec.o -o a.out $(CXXFLAGS)
 
 clean:
 	rm -f $(OBJS) a.out
