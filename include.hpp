@@ -1,12 +1,14 @@
 #pragma once
-#ifndef DEFINES_H
-#define DEFINES_H
+#ifndef INCLUDE_HPP
+#define INCLUDE_HPP
 
-#include <errno.h>
-#include <stddef.h>
-#include <stdint.h>
-#include <stdio.h>
 #include <unistd.h>
+
+#include <cerrno>
+#include <cstring>
+#include <exception>
+#include <stdexcept>
+#include <string>
 
 typedef uint16_t CipherSuite;
 
